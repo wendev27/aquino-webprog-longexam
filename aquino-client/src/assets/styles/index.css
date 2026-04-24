@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+@layer base {
+  html {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+
+  body {
+    @apply antialiased;
+    color: #7c2d12;
+    background-color: #fff7ed;
+    background-image: radial-gradient(
+      circle at top,
+      rgba(249, 115, 22, 0.1),
+      transparent 32%
+    );
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+@layer utilities {
+  .bg-zinc-950 {
+    background-color: #fff7ed !important;
+  }
+
+  .bg-zinc-900 {
+    background-color: #ffedd5 !important;
+  }
+
+  .bg-zinc-100 {
+    background-color: #fff7ed !important;
+  }
+
+  .bg-zinc-50 {
+    background-color: #ffedd5 !important;
+  }
+
+  .bg-zinc-200 {
+    background-color: #fed7aa !important;
+  }
+
+  .text-zinc-900,
+  .text-zinc-800,
+  .text-zinc-700,
+  .text-zinc-600,
+  .text-zinc-500,
+  .text-zinc-400,
+  .text-zinc-300,
+  .text-zinc-200,
+  .text-zinc-100,
+  .text-zinc-50 {
+    color: #7c2d12 !important;
+  }
+
+  .text-zinc-600,
+  .text-zinc-500,
+  .text-zinc-400,
+  .text-zinc-300 {
+    color: #a16207 !important;
+  }
+
+  .border-zinc-900 {
+    border-color: rgba(249, 115, 22, 0.24) !important;
+  }
+
+  .border-zinc-800 {
+    border-color: rgba(251, 202, 74, 0.3) !important;
+  }
+
+  .border-zinc-300 {
+    border-color: rgba(254, 215, 170, 0.7) !important;
+  }
+
+  .border-zinc-200 {
+    border-color: rgba(254, 215, 170, 0.8) !important;
+  }
+
+  .placeholder\:text-zinc-400::placeholder {
+    color: #a16207 !important;
+    opacity: 1 !important;
+  }
+}
